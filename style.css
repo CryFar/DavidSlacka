@@ -89,6 +89,100 @@ section .SectionBox {
     width: 95%;
     text-align: left;
 }
+.arrow-top {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-15%, -50%);
+}
+.arrow-top span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    margin: -40px;
+}
+.arrow-top span:nth-child(1) {
+    animation: arrow 1s infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+.arrow-top span:nth-child(2) {
+    animation: arrow 1s infinite;
+    animation-delay: .1s;
+    animation-timing-function: linear;
+}
+.arrow-top span:nth-child(3) {
+    animation: arrow 1s infinite;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+.arrow-top span:nth-child(4) {
+    animation: arrow 1s infinite;
+    animation-delay: .3s;
+    animation-timing-function: linear;
+}
+.arrow-top span:nth-child(5) {
+    animation: arrow 1s infinite;
+    animation-delay: .4s;
+    animation-timing-function: linear;
+}
+.arrow-bottom {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(5%, -50%);
+}
+.arrow-bottom span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    transform: rotate(225deg);
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    margin: -40px;
+}
+.arrow-bottom span:nth-child(1) {
+    animation: arrow 1s infinite;
+    animation-delay: .4s;
+    animation-timing-function: linear;
+}
+.arrow-bottom span:nth-child(2) {
+    animation: arrow 1s infinite;
+    animation-delay: .3s;
+    animation-timing-function: linear;
+}
+.arrow-bottom span:nth-child(3) {
+    animation: arrow 1s infinite;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+.arrow-bottom span:nth-child(4) {
+    animation: arrow 1s infinite;
+    animation-delay: .1s;
+    animation-timing-function: linear;
+}
+.arrow-bottom span:nth-child(5) {
+    animation: arrow 1s infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+@keyframes arrow {
+    from {
+        border-top: 1px solid red;
+        border-left: 1px solid red;
+    }
+    50% {
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+    }
+    to {
+        border-top: 1px solid red;
+        border-left: 1px solid red;
+    }
+}
 @media (max-width: 768px) {
     body {
         overflow: visible;
