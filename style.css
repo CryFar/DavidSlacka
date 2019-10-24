@@ -140,8 +140,8 @@ section .SectionBox {
     width: 30px;
     height: 30px;
     transform: rotate(225deg);
-    border-top: 1px solid white;
-    border-left: 1px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
     margin: -40px;
 }
 .arrow-bottom span:nth-child(1) {
@@ -171,16 +171,16 @@ section .SectionBox {
 }
 @keyframes arrow {
     from {
-        border-top: 1px solid red;
-        border-left: 1px solid red;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
     }
     50% {
-        border-top: 1px solid white;
-        border-left: 1px solid white;
+        border-top: 2px solid #3160cc;
+        border-left: 2px solid #3160cc;
     }
     to {
-        border-top: 1px solid red;
-        border-left: 1px solid red;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
     }
 }
 @media (max-width: 768px) {
